@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Ivan & Alex - Senior Class 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for the Dream Team!</h1>
+        <h2>Ivan Watson for President & Alex Verity for VP</h2>
+        
+        <p><strong>Why vote for us?</strong> Because your senior year should be legendary, and we promise to make it <em>at least</em> 47% more fun.*</p>
+        
+        <p>*Percentage may vary. Consult your local mathematician for details.</p>
+        
+        <p><strong>Our Bold Promises:</strong></p>
+        <ul>
+            <li>Shorter lines at the vending machines (probably).</li>
+            <li>A senior prank that won't get us expelled.</li>
+            <li>More spirit days, because wearing pajamas to school should be a right, not a privilege.</li>
+            <li>A prom so good, even the teachers will want to dance.</li>
+        </ul>
+        
+        <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
+        
+        <p><strong>People who have promised to vote:</strong> <span id="voteCount">0</span></p>
+        
+        <button class="button" onclick="increaseVoteCount()">Promise to vote for us</button>
+        
+        <p>Paid for by absolutely no one because we're broke high school students.</p>
+    </div>
+
+    <script>
+        let voteCount = localStorage.getItem('voteCount') ? parseInt(localStorage.getItem('voteCount')) : 0;
+        document.getElementById('voteCount').innerText = voteCount;
+
+        function increaseVoteCount() {
+            voteCount++;
+            document.getElementById('voteCount').innerText = voteCount;
+            localStorage.setItem('voteCount', voteCount);
+        }
+    </script>
+</body>
+</html>
