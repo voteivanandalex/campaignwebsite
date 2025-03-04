@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote Ivan & Alex - Senior Class 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Vote for the Dream Team!</h1>
-        <h2>Ivan Watson for President & Alex Verity for VP</h2>
+        <header>
+            <h1>Vote for the Dream Team!</h1>
+            <h2>Ivan Watson for President & Alex Verity for VP</h2>
+        </header>
         
-        <p><strong>Why vote for us?</strong> Because your senior year should be legendary, and we promise to make it <em>at least</em> 47% more fun.*</p>
+        <section class="about">
+            <p><strong>Why vote for us?</strong> Because your senior year should be legendary, and we promise to make it <em>at least</em> 47% more fun.*</p>
+            <p class="small-text">*Percentage may vary. Consult your local mathematician for details.</p>
+        </section>
         
-        <p>*Percentage may vary. Consult your local mathematician for details.</p>
+        <section class="promises">
+            <h3>Our Bold Promises:</h3>
+            <ul>
+                <li>✅ Shorter lines at the vending machines (probably).</li>
+                <li>✅ A senior prank that won't get us expelled.</li>
+                <li>✅ More spirit days, because wearing pajamas to school should be a right, not a privilege.</li>
+                <li>✅ A prom so good, even the teachers will want to dance.</li>
+            </ul>
+        </section>
         
-        <p><strong>Our Bold Promises:</strong></p>
-        <ul>
-            <li>Shorter lines at the vending machines (probably).</li>
-            <li>A senior prank that won't get us expelled.</li>
-            <li>More spirit days, because wearing pajamas to school should be a right, not a privilege.</li>
-            <li>A prom so good, even the teachers will want to dance.</li>
-        </ul>
+        <section class="image-placeholder">
+            <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
+        </section>
         
-        <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
+        <section class="vote-counter">
+            <p><strong>People who have promised to vote:</strong> <span id="voteCount">0</span></p>
+            <button class="button" onclick="increaseVoteCount()">Promise to vote for us</button>
+        </section>
         
-        <p><strong>People who have promised to vote:</strong> <span id="voteCount">0</span></p>
-        
-        <button class="button" onclick="increaseVoteCount()">Promise to vote for us</button>
-        
-        <p>Paid for by absolutely no one because we're broke high school students.</p>
+        <footer>
+            <p>Paid for by absolutely no one because we're broke high school students.</p>
+        </footer>
     </div>
 
     <script>
