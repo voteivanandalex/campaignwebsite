@@ -32,26 +32,10 @@
         <section class="image-placeholder">
             <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
         </section>
-        
-        <section class="vote-counter">
-            <p><strong>People who have promised to vote:</strong> <span id="voteCount">0</span></p>
-            <button class="button" onclick="increaseVoteCount()">Promise to vote for us</button>
-        </section>
-        
+
         <footer>
             <p>Paid for by absolutely no one because we're broke high school students.</p>
         </footer>
     </div>
-
-    <script>
-        let voteCount = localStorage.getItem('voteCount') ? parseInt(localStorage.getItem('voteCount')) : 0;
-        document.getElementById('voteCount').innerText = voteCount;
-
-        function increaseVoteCount() {
-            voteCount++;
-            document.getElementById('voteCount').innerText = voteCount;
-            localStorage.setItem('voteCount', voteCount);
-        }
-    </script>
 </body>
 </html>
