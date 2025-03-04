@@ -9,65 +9,51 @@
 </head>
 <body>
     <div class="container">
+        <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="#" onclick="showTab('main')">🏆 Main</a></li>
-                <li><a href="#" onclick="showTab('contact')">📞 Contact</a></li>
+                <li><a href="index.html" class="active">🏆 Main</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
             </ul>
         </nav>
 
-        <div id="main" class="tab-content active">
-            <header>
-                <h1>Vote for the Dream Team!</h1>
-                <h2>Ivan Watson for President & Alex Verity for VP</h2>
-            </header>
-            
-            <section class="about">
-                <p><strong>Why vote for us?</strong> Because your senior year should be legendary, and we promise to make it <em>at least</em> 47% more fun.*</p>
-                <p class="small-text">*Percentage may vary. Consult your local mathematician for details.</p>
-            </section>
-            
-            <section class="promises">
-                <h3>Our Bold Promises:</h3>
-                <ul>
-                    <li>✅ Shorter lines at the vending machines (probably).</li>
-                    <li>✅ A senior prank that won't get us expelled.</li>
-                    <li>✅ More spirit days, because wearing pajamas to school should be a right, not a privilege.</li>
-                    <li>✅ A prom so good, even the teachers will want to dance.</li>
-                </ul>
-            </section>
-            
-            <section class="image-placeholder">
-                <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
-            </section>
+        <header>
+            <h1>Vote for the Dream Team!</h1>
+            <h2>Ivan Watson for President & Alex Verity for VP</h2>
+        </header>
 
-            <section class="fun-gimmick">
-                <h3>🎉 Spin the Wheel of Senior Perks! 🎡</h3>
-                <p>Click below to spin and see what ridiculous campaign perk you'll get!</p>
-                <button class="button" onclick="spinWheel()">Spin the Wheel</button>
-                <p id="wheelResult"></p>
-            </section>
+        <section class="about">
+            <p><strong>Why vote for us?</strong> Because your senior year should be legendary, and we promise to make it <em>at least</em> 47% more fun.*</p>
+            <p class="small-text">*Percentage may vary. Consult your local mathematician for details.</p>
+        </section>
 
-            <footer>
-                <p>Paid for by absolutely no one because we're broke high school students.</p>
-            </footer>
-        </div>
+        <section class="promises">
+            <h3>Our Bold Promises:</h3>
+            <ul>
+                <li>✅ Shorter lines at the vending machines (probably).</li>
+                <li>✅ A senior prank that won't get us expelled.</li>
+                <li>✅ More spirit days, because wearing pajamas to school should be a right, not a privilege.</li>
+                <li>✅ A prom so good, even the teachers will want to dance.</li>
+            </ul>
+        </section>
 
-        <div id="contact" class="tab-content">
-            <h2>Contact Us 📬</h2>
-            <p>Follow us on Instagram: <a href="https://instagram.com/ivan_and_alex_forseniorclass" target="_blank">@ivan_and_alex_forseniorclass</a></p>
-            <p>Email us at: <a href="mailto:ivanandalex2025campaign@gmail.com">ivanandalex2025campaign@gmail.com</a></p>
-        </div>
+        <section class="image-placeholder">
+            <p><em>Add image of Ivan and Alex looking presidential (or at least like they know what they’re doing).</em></p>
+        </section>
+
+        <section class="fun-gimmick">
+            <h3>🎉 Spin the Wheel of Senior Perks! 🎡</h3>
+            <p>Click below to spin and see what ridiculous campaign perk you'll get!</p>
+            <button class="button" onclick="spinWheel()">Spin the Wheel</button>
+            <p id="wheelResult"></p>
+        </section>
+
+        <footer>
+            <p>Paid for by absolutely no one because we're broke high school students.</p>
+        </footer>
     </div>
 
     <script>
-        function showTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.getElementById(tabId).classList.add('active');
-        }
-
         function spinWheel() {
             const perks = [
                 "Free high-fives for life! 🖐️",
