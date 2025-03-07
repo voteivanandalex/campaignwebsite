@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // Spin the Wheel gimmick
 function spinWheel() {
     const perks = [
-        "Free high-fives for life! 🖐️",
-        "One homework extension (no questions asked). 📝",
-        "Guaranteed good vibes all year! 😎",
-        "A personal shoutout at prom! 🎤",
-        "Extra fries in your lunch tray! 🍟",
-        "VIP seating at pep rallies! 🎉"
+        "Very strong sense of community! 🤝",
+        "Emphasis on school pep rallies! 🎉",
+        "One of the best proms in school history! 😲",
+        "Amazing senior body to leadership communication. 🗣",
+        "Newsletters and suggestion box to hear from students. 👂",
+        "A senior year no one will forget! ❗"
     ];
     const randomPerk = perks[Math.floor(Math.random() * perks.length)];
     document.getElementById("wheelResult").innerText = `You got: ${randomPerk}`;
